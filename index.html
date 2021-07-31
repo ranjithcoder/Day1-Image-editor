@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Ranjithjupaka">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Image editor</title>
+</head>
+<body>
+    <h2>change photo properties using the below sliders</h2>
+    <div class="controls">
+        <label for="spacing">Padding</label>
+        <input type="range" name="spacing" min="10" max="100" value="10" data-sizing="px">
+        <label for="blur">Blur</label>
+        <input type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+        <fieldset class="colors">
+            <legend>Colors</legend>
+            <div class="g1">
+            <label for="bordercolor">Border color</label>
+            <input type="color" name="bordercolor" value="#f0ec04"> 
+            </div>
+            <div class="g2">
+            <label for="basecolor">Base color</label>
+            <input type="color" name="basecolor" value="#f15f0b">  
+            </div>
+        </fieldset>
+        <fieldset class="rotation">
+            <legend>Rotation</legend>
+            <label for="Xrotation">X Rotation</label>
+            <input type="range" name="Xrotation" min="0" max="360" value="0" data-sizing="deg"> 
+            <label for="Yrotation">Y Rotation</label>
+            <input type="range" name="Yrotation" min="0" max="360" value="0" data-sizing="deg">
+            <label for="Zrotation">Z Rotation</label>
+            <input type="range" name="Zrotation" min="0" max="360" value="0" data-sizing="deg">
+        </fieldset>
+    </div>
+    <img src="./1.jpg" alt="Image">
+    <script src="./app.js"></script>
+</body>
+</html>

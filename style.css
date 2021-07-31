@@ -1,0 +1,57 @@
+:root{
+    --space:10px;
+    --blur:10px;
+    --Xrotate:0deg;
+    --Yrotate:0deg;
+    --Zrotate:0deg;
+    --basecolor:#f15f0b;
+    --bordercolor:#f0ec04;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+html{
+    font-size: 10px;
+}
+
+h2{
+    font-size: 2rem;
+}
+.rotation{
+  width: 30rem;
+  display: flex;
+  margin-left: 30%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+.colors{
+    margin-left: 30%;
+    width: 20rem;
+    display: flex;
+    justify-content: space-around;
+}
+.g1,.g2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+img{
+    padding: var(--space);
+    filter: blur(var(--blur));
+    background-color: var(--basecolor);
+    border: 10px solid var(--bordercolor);
+    transform:rotateY(var(--Yrotate)) rotateX(var(--Xrotate)) rotateZ(var(--Zrotate));
+    margin-top: 4rem;
+    width: 40%;
+    transition: 1s ease-out;
+}
